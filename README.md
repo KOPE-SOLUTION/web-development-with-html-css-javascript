@@ -28,14 +28,14 @@ Repository นี้เป็นสื่อประกอบ Series สอน 
 3. เปิดหน้าเว็บและทดลองเปลี่ยนค่าเล็ก ๆ เพื่อสังเกตผล
 4. ทำแบบฝึกหัดท้าย EP ก่อนดูตอนถัดไป
 
-> ปัจจุบันมีเนื้อหาและ Source Code แบบละเอียดเฉพาะ EP01 ส่วน EP02–EP12 เป็นโครงสร้างสำหรับ Roadmap และจะพัฒนาในลำดับถัดไป
+> ปัจจุบันมีเนื้อหาและ Source Code แบบละเอียดสำหรับ EP01 และ EP02 ส่วน EP03–EP12 เป็นโครงสร้างสำหรับ Roadmap และจะพัฒนาในลำดับถัดไป
 
 ## Roadmap
 
 | EP | ชื่อตอน | สิ่งที่จะสร้าง | แนวคิดหลัก |
 |---|---|---|---|
 | [EP01](./episodes/ep01-first-web-page/) | เว็บไซต์หน้าแรกของเรา | หน้าแนะนำตัวพร้อมปุ่มทักทาย | HTML document, element, CSS selector, event |
-| EP02 | จัดโครงสร้างเนื้อหาให้มีความหมาย | About และ Contact section | Semantic HTML, heading hierarchy, link, image, accessibility |
+| [EP02](./episodes/ep02-semantic-content/) | จัดโครงสร้างเนื้อหาให้มีความหมาย | About, Projects และ Contact section | Semantic HTML, heading hierarchy, link, image, accessibility |
 | EP03 | ตกแต่งหน้าเว็บด้วย CSS | Profile card และระบบสีพื้นฐาน | Cascade, inheritance, box model, spacing, custom properties |
 | EP04 | จัด Layout แบบยืดหยุ่น | Navigation และ Projects section | Flexbox, reusable class, component thinking |
 | EP05 | ทำเว็บไซต์ให้รองรับทุกหน้าจอ | Mobile-first responsive portfolio | Viewport, media query, responsive units, responsive image |
@@ -83,5 +83,6 @@ Repository นี้เป็นสื่อประกอบ Series สอน 
 ## สถานะเนื้อหา
 
 - [x] EP01 — เนื้อหาและ Source Code สมบูรณ์
-- [ ] EP02–EP12 — รอพัฒนาในลำดับถัดไป
+- [x] EP02 — เนื้อหาและ Source Code สมบูรณ์
+- [ ] EP03–EP12 — รอพัฒนาในลำดับถัดไป
 
