@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio ที่ตกแต่งด้วย CSS Foundations ระบบสี และ Box Model">
+    <title>Portfolio ของฉัน | CSS Foundations</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">My Portfolio</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#projects">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">KOPE SOLUTION · WEB DEVELOPMENT</p>
+        <h1 id="hero-title">สวัสดี ฉันกำลังสร้าง Portfolio ของตัวเอง</h1>
+        <p class="intro">เว็บไซต์นี้รวบรวมเรื่องราว สิ่งที่กำลังเรียนรู้ และผลงานที่ฉันสร้างระหว่างฝึก Web Development</p>
+        <button id="greetingButton" type="button">ทักทายฉัน</button>
+        <p id="greetingMessage" class="message" aria-live="polite"></p>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT</p>
+          <h2 id="about-title">เกี่ยวกับฉัน</h2>
+        </div>
+
+        <figure class="profile-card">
+          <img src="images/profile-placeholder.svg" alt="ภาพตัวอย่างสำหรับใช้แทนรูปโปรไฟล์" width="320" height="320">
+          <figcaption class="profile-caption">
+            <strong>นักพัฒนาเว็บฝึกหัด</strong>
+            กำลังเรียนรู้ HTML, CSS และ JavaScript
+          </figcaption>
+        </figure>
+
+        <div class="about-text">
+          <p>ฉันเป็นผู้เริ่มต้นที่กำลังเรียนรู้ HTML, CSS และ JavaScript โดยฝึกสร้างเว็บไซต์จริงทีละส่วน</p>
+          <p>เป้าหมายของฉันคือเข้าใจพื้นฐาน Web Development และสร้างเว็บไซต์ที่อ่านง่าย ใช้งานง่าย และเป็นมิตรกับทุกคน</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">PROJECTS</p>
+          <h2 id="projects-title">ผลงานของฉัน</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>Portfolio ที่เริ่มจาก Semantic HTML และพัฒนาระบบสี ระยะห่าง และ Card ด้วย CSS Foundations</p>
+            <a href="../ep02-semantic-content/index.html">ดูโครงสร้างจาก EP02</a>
+          </article>
+
+          <article class="project-card">
+            <h3>โปรเจกต์ถัดไป</h3>
+            <p>พื้นที่สำหรับผลงานใหม่ที่จะเพิ่มเข้ามา เมื่อฉันเรียนรู้เรื่อง Layout และ Responsive Design มากขึ้น</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">ติดต่อฉัน</h2>
+        </div>
+        <p>หากต้องการพูดคุยหรือแลกเปลี่ยนเรื่อง Web Development ติดต่อได้ที่</p>
+        <address class="contact-links">
+          <a href="mailto:kittisak.hanheam@gmail.com">kittisak.hanheam@gmail.com</a>
+          <a href="https://github.com/KOPE-SOLUTION" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>สร้างด้วย HTML, CSS และ JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
