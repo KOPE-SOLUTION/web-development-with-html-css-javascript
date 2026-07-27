@@ -126,7 +126,7 @@ Margin
 
 - หน้าตาหลักอาจยังไม่เปลี่ยน เพราะ EP02 ใช้ `border-box` อยู่แล้ว
 - เลือก Hero ใน Developer Tools แล้วเปิดแถบ Computed
-- ชี้ให้ผู้เรียนดูแผนภาพ Content, Padding, Border และ Margin
+- ดูแผนภาพ Content, Padding, Border และ Margin
 - การเพิ่ม `::before` และ `::after` ทำให้กล่องที่สร้างด้วย Pseudo-element ใช้กติกาเดียวกัน
 
 ### Step 4: ใช้ Inheritance กับ Style พื้นฐาน
