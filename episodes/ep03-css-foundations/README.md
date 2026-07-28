@@ -48,13 +48,6 @@ ep03-css-foundations/
 <title>Portfolio ของฉัน | CSS Foundations</title>
 ```
 
-**บันทึกแล้วดูผล:**
-
-1. เปิด `index.html`
-2. หน้าเว็บควรมีหน้าตาเหมือน EP02
-3. ชื่อบน Tab ของ Browser จะเปลี่ยนเป็น “Portfolio ของฉัน | CSS Foundations”
-4. เปิด Developer Tools และตรวจว่า Console ไม่มี Error
-
 ### Step 2: สร้างระบบสีและระยะห่างด้วย Custom Properties
 
 ค่าสีและระยะห่างที่เขียนซ้ำหลายจุดแก้ไขยาก เราจะตั้งชื่อให้ค่าเหล่านี้และเก็บไว้ใน `:root` เพื่อให้ทุก Element เรียกใช้ได้
@@ -454,13 +447,6 @@ footer p {
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- Project เรียงลงมาตาม Normal Flow
-- Card ทั้งสองใบใช้ Border, Background และ Spacing ชุดเดียวกัน
-- Contact links อยู่บรรทัดเดียวกันเมื่อพื้นที่พอและขึ้นบรรทัดใหม่ได้เมื่อพื้นที่แคบ
-- Footer ใช้สีข้อความรองจากระบบสี
-
 ### Step 12: เก็บการแสดงผลหน้าจอเล็ก
 
 Responsive Design จะเรียนโดยละเอียดใน EP05 แต่เราจะเก็บกติกาสำหรับหน้าจอเล็กไว้ก่อน เพื่อไม่ให้ Heading และ Padding ใหญ่เกินพื้นที่
@@ -486,13 +472,6 @@ Responsive Design จะเรียนโดยละเอียดใน EP05
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- เปิด Device Toolbar ใน Developer Tools
-- ทดลองความกว้างประมาณ `375px`
-- Padding ของ Section และขนาด Heading จะลดลง
-- หน้าเว็บไม่ควรมี Horizontal scrollbar
-
 ### Step 13: ทดลอง Cascade และตรวจงาน
 
 Cascade คือกติกาที่ Browser ใช้เลือก Declaration เมื่อหลาย Rule กำหนด Property เดียวกัน โดยพื้นฐาน Class selector เฉพาะเจาะจงกว่า Type selector และเมื่อ Specificity เท่ากัน Rule ที่เขียนทีหลังจะชนะ
@@ -504,13 +483,6 @@ p {
   color: red;
 }
 ```
-
-**บันทึกแล้วดูผล:**
-
-- Paragraph ทั่วไปบางส่วนเปลี่ยนเป็นสีแดง
-- `.intro`, `.message` และ `.project-card p` ยังใช้สีจาก Rule ที่เฉพาะเจาะจงกว่า
-- เปิดแถบ Styles เพื่อดูว่า Declaration ใดถูกขีดทับ
-- ลบ Rule ทดลองออกก่อนจบ EP
 
 ตรวจงานรอบสุดท้าย:
 
