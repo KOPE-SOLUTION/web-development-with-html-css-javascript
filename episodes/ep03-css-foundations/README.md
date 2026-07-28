@@ -4,6 +4,8 @@
 
 EP นี้ออกแบบเป็น **Code-along** ผู้เรียนจึงไม่ต้องอ่านทฤษฎีทั้งหมดแล้วค่อยกลับมารีวิว Code แต่สามารถทำตามทีละหัวข้อ กดบันทึก และดูผลใน Browser ได้ทันที
 
+> **หมายเหตุเรื่องหน้าตาของเว็บไซต์:** หลังจบ EP นี้ บางส่วนของหน้าเว็บอาจยังดูไม่ลงตัวหรือดูเรียบกว่าเดิมเมื่อเปิดบนจอใหญ่ โดยเฉพาะ Header, About และ Projects เพราะเราตั้งใจกลับมาใช้ Normal Flow และยังไม่ใช้ Flexbox หรือ Grid เพื่อให้โฟกัสกับพื้นฐาน CSS ได้แก่ Cascade, Inheritance, Box Model, Spacing และ Custom Properties ก่อน เราจะนำพื้นฐานเหล่านี้ไปจัด Layout ให้เหมาะกับจอใหญ่ด้วย Flexbox ใน EP04 และปรับให้รองรับขนาดหน้าจอต่าง ๆ โดยละเอียดใน EP05
+
 ## เป้าหมายการเรียนรู้
 
 เมื่อจบ EP นี้ ผู้เรียนจะสามารถ:
@@ -88,12 +90,6 @@ CSS Custom Property ขึ้นต้นด้วย `--` และอ่าน
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- หน้าตายังไม่เปลี่ยน เพราะเราสร้างตัวแปรแล้วแต่ยังไม่เรียกใช้
-- ใน Developer Tools จะเห็น Custom Properties อยู่ภายใต้ `:root`
-- นี่เป็นผลที่ถูกต้อง ไม่ใช่ Error
-
 ### Step 3: ทำความเข้าใจ Box Model และ `box-sizing`
 
 Browser มองทุก Element เป็นกล่อง 4 ชั้น:
@@ -122,11 +118,7 @@ Margin
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
 - หน้าตาหลักอาจยังไม่เปลี่ยน เพราะ EP02 ใช้ `border-box` อยู่แล้ว
-- เลือก Hero ใน Developer Tools แล้วเปิดแถบ Computed
-- ดูแผนภาพ Content, Padding, Border และ Margin
 - การเพิ่ม `::before` และ `::after` ทำให้กล่องที่สร้างด้วย Pseudo-element ใช้กติกาเดียวกัน
 
 ### Step 4: ใช้ Inheritance กับ Style พื้นฐาน
@@ -150,13 +142,6 @@ body {
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- สีและ Font ควรใกล้เคียงเดิม เพราะตัวแปรเก็บค่าเดียวกับที่เคยเขียนโดยตรง
-- เปลี่ยน `--color-background` ชั่วคราวเป็น `#fff7ed`
-- กดบันทึกแล้วดูว่าสีพื้นหลังทั้งหน้าเปลี่ยน
-- คืนค่าเป็น `#eef2ff` ก่อนทำ Step ถัดไป
-
 ### Step 5: นำระบบสีไปใช้กับ Link และ Focus
 
 Link มีหลาย State เช่น ปกติ, Hover และ Focus เราจะใช้ตัวแปรสีเพื่อให้ State เหล่านี้สม่ำเสมอ และยังคง Focus outline สำหรับผู้ใช้ Keyboard
@@ -179,13 +164,6 @@ button:focus-visible {
   outline-offset: 0.1875rem;
 }
 ```
-
-**บันทึกแล้วดูผล:**
-
-- เลื่อน Pointer ไปบน Link แล้วสีควรเข้มขึ้น
-- กด `Tab` เดินผ่าน Logo, เมนู, Button และ Contact links
-- ทุกจุดที่ Focus ต้องมี Outline มองเห็นชัด
-- ไม่ควรใช้ `outline: none` โดยไม่มี Style อื่นทดแทน
 
 ### Step 6: ปรับ Container, Header และ Navigation
 
@@ -230,13 +208,6 @@ main {
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- Logo จะอยู่บรรทัดแรกและ Navigation อยู่ด้านล่าง
-- จุดนำหน้ารายการเมนูหายไป
-- เนื้อหาทั้ง Header และ Main อยู่กลางหน้าและกว้างไม่เกิน `65rem`
-- ลดความกว้าง Browser แล้วสังเกตว่า Container ยังเหลือพื้นที่ด้านข้าง
-
 ### Step 7: ใช้ Box Model สร้างพื้นผิวของ Hero และ Section
 
 Hero และ Section มีพื้นผิวเหมือนกัน จึงรวม Selector เพื่อใช้ Declaration block ร่วมกัน จากนั้นแยกเฉพาะค่าที่ต่างออกมา
@@ -262,13 +233,6 @@ Hero และ Section มีพื้นผิวเหมือนกัน �
   margin-top: var(--space-5);
 }
 ```
-
-**บันทึกแล้วดูผล:**
-
-- ทุก Section มีพื้นหลังสีขาว มุมโค้ง และเงาแบบเดียวกัน
-- `padding` สร้างพื้นที่ภายใน Card
-- `margin-top` สร้างระยะภายนอกระหว่าง Section
-- ลองปิด `padding` และ `margin-top` ใน Developer Tools ทีละค่า แล้วเปรียบเทียบหน้าที่ของทั้งสอง Property
 
 ### Step 8: จัดระบบ Typography และ Spacing
 
@@ -318,13 +282,6 @@ h3 {
 }
 ```
 
-**บันทึกแล้วดูผล:**
-
-- Heading มีลำดับขนาดชัดเจน
-- Eyebrow ใช้สี Primary และมีระยะห่างสม่ำเสมอ
-- Intro ไม่ยาวเต็ม Card เพราะจำกัดด้วย `55ch`
-- เปลี่ยน `--space-4` ชั่วคราว แล้วดูว่า Intro และส่วนอื่นที่ใช้ตัวแปรเดียวกันเปลี่ยนพร้อมกัน
-
 ### Step 9: ตกแต่ง Button และข้อความตอบกลับ
 
 Button เป็นกล่องอีกหนึ่งใบ จึงใช้ Padding, Radius และสีจากระบบเดียวกัน ส่วน `font: inherit` ทำให้ Button ใช้ Font จาก Parent
@@ -356,12 +313,6 @@ button:hover {
   font-weight: 800;
 }
 ```
-
-**บันทึกแล้วดูผล:**
-
-- Button ใช้สี Primary และเปลี่ยนเป็นสีเข้มเมื่อ Hover
-- กดปุ่ม “ทักทายฉัน” แล้วข้อความสีเขียวปรากฏ
-- พื้นที่ใต้ Button ไม่กระโดดเมื่อข้อความปรากฏ เพราะ `.message` มี `min-height`
 
 ### Step 10: สร้าง Profile Card
 
@@ -435,13 +386,6 @@ Profile card จะรวม Semantic HTML จาก EP02 เข้ากับ 
   margin: 0 0 var(--space-3);
 }
 ```
-
-**บันทึกแล้วดูผล:**
-
-- รูปและ Caption รวมกันเป็น Card อยู่กลาง About section
-- Card มี Padding ภายใน มี Border และมี Margin ด้านล่าง
-- เลือก `.profile-card` ใน Developer Tools แล้วตรวจ Box Model
-- ปิด `padding`, `border` และ `margin` ทีละค่าเพื่อดูหน้าที่ของแต่ละชั้น
 
 ### Step 11: ปรับ Project, Contact และ Footer
 
